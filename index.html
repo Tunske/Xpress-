@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+
+<section>
+	<div class="sidebar">
+        <center>
+		<img src="images/logo.jpg" class="logo">
+        </center>
+		<ul class="nav">
+			<li><a href="#"><i class="fa fa-users"></i> Verifiers</a></li>
+			<li class="active"><a href="#"><i class="fa fa-tags"></i> Deals</a></li>
+			<li><a href="#"><i class="fa fa-money-bills"></i> Transcations</a></li>
+
+		</ul>
+<!--
+			<ul class="social">
+				<li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+				<li><a href="#"><i class=" fa-brands fa-x-twitter"></i></a></li>
+				<li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+			</ul>
+		-->
+
+	</div>
+	<div class="main">
+		
+		<div class="head-section">
+			<div class="col-6">
+                <strong>
+				<h2>Verifiers</h2>
+                </strong>
+              
+			</div>
+
+			<div class="col-6" style="text-align: right;">
+				<i class="fa fa-bell hicon"></i>
+				
+				<!--<i class="fa fa-search hicon sicon"></i>-->
+
+				<img src="images/Profile-Picture.png" class="user"><span>
+                <i class="fa fa-angle-down ticon"></i></span>
+
+				<div class="profile-div">
+					<p><i class="fa fa-user"></i>   Profile</p>
+					<p><i class="fa fa-cog"></i>   Settings</p>
+					<p><i class="fa fa-power-off"></i>   Log Out</p>
+				</div>
+
+        <div class="notification-div">
+          <p>Success!Your registration is now complete!</p>
+          <p>Here's some information you may find useful!</p>			
+        </div>
+
+			</div>
+
+			<div class="clearfix"></div>
+		</div>
+
+		<br><br>
+		<div class="content">
+            <br>
+<form action="#">
+    <select name="status" id="status">
+        <option value="#">All</option>
+      <option value="active">Active</option>
+      <option value="awaiting_approval">Awaiting approval</option>
+      <option value="deactivated">Deactivated</option>
+    </select>
+</form>
+<div class="open-modal-btn-wrapper" style="text-align: right;">
+    <i class="fa fa-search"></i><span></span>
+    <input type="text" placeholder="Name/Phone no / Location" style="text-align: left;"><span>
+    <button class="open-modal-btn">
+       <b> + Add New Verifiers</b>
+    </button></span>
+</div>
+<br>
+			<table>
+  
+  <thead>
+    <tr>
+      <th scope="col" width="50px"><input value="Values" type="checkbox" name="checkbox" class="inline"></th>
+      <th scope="col" width="150px">Firstname</th>
+      <th scope="col" width="150px">Lastname</th>
+      <th scope="col" width="200px">Phonenumber</th>
+      <th scope="col" width="140px">Partner</th>
+      <th scope="col" width="150px">Location</th>
+      <th scope="col" width="200px"><center>Status</center></th>
+      <th scope="col" width="150px"><center>Action</center></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <th scope="col" width="50px"><input value="Values" type="checkbox" name="checkbox" class="inline"></th>
+      <td data-label="Firstname">Temitope</td>
+      <td data-label="Lastname">Adejumoke</td>
+      <td data-label="phonenumber">+234800 000 0000</td>
+      <td data-label="Partner">The Place</td>
+      <td data-label="Location">Festac</td>
+      <td data-label="Status" style="position: inherit;"><button type="button" class="btn btn-outline-success">Active</button></td>
+      <td data-label="option"><center><i class="fa-solid fa-ellipsis"></i></center>
+        
+    </tr>
+
+    <tr>
+        <th scope="col" width="50px"><input value="Values" type="checkbox" name="checkbox" class="inline"></th>
+      <td data-label="Firstname">Temitope</td>
+      <td data-label="Lastname">Adejumoke</td>
+      <td data-label="phonenumber">+234800 000 0000</td>
+      <td data-label="Partner">The Place</td>
+      <td data-label="Location">Festac</td>
+      <td data-label="Status" style="position: relative;"><button type="button" class="btn btn-outline-warning">Awaiting Approval</button></td>
+      <td data-label="option"><center><i class="fa-solid fa-ellipsis"></i></center></td>
+    </tr>
+    <tr>
+        <th scope="col" width="50px"><input value="Values" type="checkbox" name="checkbox" class="inline"></th>
+      <td data-label="Firstname">Temitope</td>
+      <td data-label="Lastname">Adejumoke</td>
+      <td data-label="phonenumber">+234800 000 0000</td>
+      <td data-label="Partner">The Place</td>
+      <td data-label="Location">Festac</td>
+      <td data-label="Status" style="position: relative;"><button type="button" class="btn btn-outline-success">Active</button></td>
+      <td data-label="option"><center><i class="fa-solid fa-ellipsis"></i></center></td>
+    </tr>
+
+    <tr>
+        <th scope="col" width="50px"><input value="Values" type="checkbox" name="checkbox" class="inline"></th>
+      <td data-label="Firstname">Temitope</td>
+      <td data-label="Lastname">Adejumoke</td>
+      <td data-label="phonenumber">+234800 000 0000</td>
+      <td data-label="Partner">The Place</td>
+      <td data-label="Location">Festac</td>
+      <td data-label="Status" style="position: relative;"><button type="button" class="btn btn-outline-danger">Deactivated</button></td>
+      <td data-label="option"><center><i class="fa-solid fa-ellipsis"></i></center></td>
+    </tr>
+
+    <tr>
+        <th scope="col" width="50px"><input value="Values" type="checkbox" name="checkbox" class="inline"></th>
+      <td data-label="Firstname">Temitope</td>
+      <td data-label="Lastname">Adejumoke</td>
+      <td data-label="phonenumber">+234800 000 0000</td>
+      <td data-label="Partner">The Place</td>
+      <td data-label="Location">Festac</td>
+      <td data-label="Status" style="position: relative;"><button type="button" class="btn btn-outline-success">Active</button></td>
+      <td data-label="option"><center><i class="fa-solid fa-ellipsis"></i></center></td>
+    </tr>
+
+    <tr>
+        <th scope="col" width="50px"><input value="Values" type="checkbox" name="checkbox" class="inline"></th>
+      <td data-label="Firstname">Temitope</td>
+      <td data-label="Lastname">Adejumoke</td>
+      <td data-label="phonenumber">+234800 000 0000</td>
+      <td data-label="Partner">The Place</td>
+      <td data-label="Location">Festac</td>
+      <td data-label="Status" style="position: relative;"><button type="button" class="btn btn-outline-danger">Deactivated</button></td>
+      <td data-label="option"><center><i class="fa-solid fa-ellipsis"></i></center></td>
+    </tr>
+
+    <tr>
+        <th scope="col" width="50px"><input value="Values" type="checkbox" name="checkbox" class="inline"></th>
+      <td data-label="Firstname">Temitope</td>
+      <td data-label="Lastname">Adejumoke</td>
+      <td data-label="phonenumber">+234800 000 0000</td>
+      <td data-label="Partner">The Place</td>
+      <td data-label="Location">Festac</td>
+      <td data-label="Status" style="position: relative;"><button type="button" class="btn btn-outline-warning">Awaiting Approval</button></td>
+      <td data-label="option"><center><i class="fa-solid fa-ellipsis"></i></center></td>
+    </tr>
+
+    <tr>
+        <th scope="col" width="50px"><input value="Values" type="checkbox" name="checkbox" class="inline"></th>
+      <td data-label="Firstname">Temitope</td>
+      <td data-label="Lastname">Adejumoke</td>
+      <td data-label="phonenumber">+234800 000 0000</td>
+      <td data-label="Partner">The Place</td>
+      <td data-label="Location">Festac</td>
+      <td data-label="Status" style="position: relative;"><button type="button" class="btn btn-outline-warning">Awaiting Approval</button></td>
+      <td data-label="option"><center><i class="fa-solid fa-ellipsis"></i></center></td>
+    </tr>
+
+    <tr>
+        <th scope="col" width="50px"><input value="Values" type="checkbox" name="checkbox" class="inline"></th>
+      <td data-label="Firstname">Temitope</td>
+      <td data-label="Lastname">Adejumoke</td>
+      <td data-label="phonenumber">+234800 000 0000</td>
+      <td data-label="Partner">The Place</td>
+      <td data-label="Location">Festac</td>
+      <td data-label="Status" style="position: relative;"><button type="button" class="btn btn-outline-success">Active</button></td>
+      <td data-label="option"><center><i class="fa-solid fa-ellipsis"></i></center></td>
+    </tr>
+
+  </tbody>
+</table>
+<br>
+		</div>
+  
+        <div class="section">
+          <div class="col-md-3">
+            <label for="row_per_page" class="col-md-5">Row per Page</label>
+            <select name="row" id="rows">
+              <option value="select" selected>5</option>
+              <option value="10">10</option>
+              <option value="15" disabled>15</option>
+              <option value="20">20</option>
+            </select>
+
+          
+        
+
+          </div>
+          <ul class="pagination">
+          <li class="page-item disabled"><a href="#">Previous</a></li>
+          <li class="page-item active"><a href="#" class="page-link">1</a></li>
+          <li class="page-item"><a href="#" class="page-link">2</a></li>
+          <li class="page-item"><a href="#" class="page-link">3</a></li>
+          <li class="page-item "><a href="#" class="page-link">4</a></li>
+          <li class="page-item"><a href="#" class="page-link">5</a></li>
+          <li class="page-item"><a href="#" class="page-link">Next</a></li>
+          </ul>
+          </div>
+
+	</div>
+</section>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $(".user").click(function(){
+    $(".profile-div").toggle(1000);
+  });
+  $(".hicon:nth-child(1)").click(function(){
+    $(".notification-div").toggle(1000);
+  });
+  $(".sicon").click(function(){
+    $(".search").toggle(1000);
+  });
+});
+</script>
+
+<script type="text/javascript">
+	$('li').click(function(){
+    $('li').removeClass("active");
+    $(this).addClass("active");
+});
+
+
+
+	
+</script>
+</body>
+</html>
